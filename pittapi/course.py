@@ -338,7 +338,7 @@ def _validate_term(term: str | int) -> str:
 
 def _validate_subject(subject: str) -> str:
     """Validates that the subject code entered is present in the API request."""
-    if subject in _get_subject_codes():
+    if subject in get_subject_codes():
         return subject
     raise ValueError("Subject code entered isn't a valid Pitt subject code.")
 
