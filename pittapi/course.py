@@ -392,7 +392,7 @@ def _get_section_details(term: str | int, section_id: str | int) -> JSON:
 
 
 # operations from api calls
-def _get_subject_codes() -> list[str]:
+def get_subject_codes() -> list[str]:
     response = _get_subjects()
     codes = []
     for subject in response["subjects"]:
